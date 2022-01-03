@@ -1,0 +1,16 @@
+.contacts {
+    &__phone {
+        @include font-size-get(h4);
+        a {
+            color: $c-light-blue;
+            padding-bottom: 2px;
+
+            @include baseHover {
+               color: $c-blue;
+            }
+        }
+    }
+    &__email {
+        @include font-size-get(p2);
+    }
+}

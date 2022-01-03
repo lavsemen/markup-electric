@@ -1,0 +1,66 @@
+// File for scss-vars.
+// For example: main colors, paddings and so on.
+$font-size-base: 18px;
+$font-family-base: 'Montserrat', sans-serif;
+
+
+// colors
+$c-black: #302E2D;
+$c-white: #fff;
+$c-blue: #1B3CE9;
+$c-light-blue: #00B9F3;
+$c-gradient1: radial-gradient(79.17% 678.17% at 2.5% 8.54%, rgba(0, 185, 243, 0.7) 0%, #1B3CE9 100%);
+//grid
+$breakpoints: (
+    'sm': 0px,
+    'md': 768px,
+    'lg': 1024px,
+    'xl': 1366px,
+) !default;
+
+// Breakpoint map for bootstrap
+$grid-breakpoints: (
+    'sm': 0px,
+    'md': 768px,
+    'lg': 1024px,
+    'xl': 1366px,
+) !default;
+
+// Container max-widths for bootstrap
+$container-max-widths: (
+    sm: 100%,
+    md: 738px,
+    lg: 990px,
+    xl: 1290px,
+) !default;
+// col gutters
+$grid-gutter-width: 30px !default;
+$gutters: (
+    0: 0,
+    1: 12px,
+    2: 15px,
+    3: 24px,
+    4: 30px,
+    5: 16px,
+) !default;
+//Table of responsible fonts
+//
+//Define the font-sizes and line-height or ratio (ratio column)
+//More: https://designpub.ru/%D1%88%D1%80%D0%B8%D1%84%D1%82%D1%8B-%D0%B2-%D0%B0%D0%B4%D0%B0%D0%BF%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D0%BC-%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%D0%B5-%D0%BA%D0%B0%D0%BA-%D0%BE%D1%80%D0%B3%D0%B0%D0%BD%D0%B8%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%83-ff4fd0d1577d
+
+$font-sizes: (
+    //   (font-size,      (line-height),  letter-spacing (em) )
+    //   xs, sm, md, lg, xl
+    buttonL: (16, 16, 20, 20, (16px, 16px, 26px, 26px), 0),
+    buttonM: (16, 16, 16, 16, (24px, 24px, 24px, 24px), 0),
+    buttonS: (12, 12, 12, 12, (20px, 20px, 20px, 20px), 0),
+    h1: (30, 48, 48, 72, (36px, 56px, 56px, 80px), 0),
+    h2: (24, 32, 32, 32, (30px, 40px, 40px, 40px), 0),
+    h3: (18, 22, 22, 22, (24px, 28px, 28px, 28px), 0),
+    h4: (16, 16, 18, 18, (22px, 22px, 24px, 24px), 0),
+    h5: (14, 16, 16, 16, (20px, 22px, 22px, 22px), 0),
+    p1: (14, 14, 18, 18, (18px, 18px, 24px, 24px), 0),
+    p2: (14, 14, 14, 14, (18px, 18px, 18px, 18px), 0),
+    p3: (10, 10, 12, 12, (14px, 14px, 16px, 16px), 0),
+    p4: (12, 12, 12, 12, (16px, 16px, 16px, 16px), 0)
+) !default;

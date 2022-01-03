@@ -1,0 +1,20 @@
+.menu {
+    position: relative;
+    &__close {
+        position: absolute;
+        right: 0;
+        top: -20px;
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
+    &__item {
+        & + * {
+            margin-top: 24px;
+        }
+        .link {
+            @include font-size-get(h3);
+        }
+    }
+}

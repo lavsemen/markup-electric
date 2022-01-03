@@ -1,0 +1,11 @@
+<ul class="menu">
+    <div class="menu__close">{{Icon iconName="cross"}}</div>
+    {{#each links}}
+    <li class="menu__item">
+        {{>uikit/links/markup href=url text=name}}
+    </li>
+    {{/each}}
+    <li class="menu__item">
+        {{>socials/socials}}
+    </li>
+</ul>

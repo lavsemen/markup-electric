@@ -1,0 +1,72 @@
+.header {
+    padding: 24px;
+    border-bottom: 1px solid rgba($color: $c-blue, $alpha: .3);
+    @include respond-to(md) {
+        padding: 12px;
+    };
+    &__items {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    &__burger {
+        display: none;
+        @include respond-to(lg) {
+            display: block;
+        };
+    }
+    &__item {
+        @include respond-to(lg) {
+            &.header__nav {
+                display: none;
+            }
+            &:nth-child(3) {
+                display: none;
+            }
+        };
+    }
+    &__menu {
+        &-close {
+            
+        }
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 50vh;
+        padding: 40px;
+        width: 100%;
+        transition: .4s ease-in-out;
+        transform: translateY(-1000px);
+        background: $c-white;
+        @include respond-from(lg) {
+            display: none;
+        };
+        &.active {
+            transform: translateY(0);
+        }
+    }
+    &__button {
+        &--small {
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: $c-blue;
+        }
+    }
+    &__nav {
+        &-list {
+            display: flex;
+            align-items: center;
+        }
+        &-item {
+            @include font-size-get(p2);
+            & + * {
+                margin-left: 26px;
+            }
+        }
+    }
+}

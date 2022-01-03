@@ -1,0 +1,39 @@
+<header class="header">
+    <div class="container">
+        <div class="header__items">
+            <div class="header__burger">
+                <button class="burger">
+                    {{Icon iconName="burger"}}
+                </button>
+            </div>
+            <nav class="header__nav header__item">
+                <ul class="header__nav-list">
+                    {{#each links}}
+                        <li class="header__nav-item">
+                            {{>uikit/links/markup href=url text=name}}
+                        </li>
+                    {{/each}}
+                </ul>
+            </nav>
+            <div class="header__item">
+                {{> socials/socials }}
+            </div>
+            <div class="header__item">
+                {{> contacts/contacts }}
+            </div>
+            <div class="header__item">
+                <div class="d-md-block d-none">
+                    {{> uikit/buttons/markup type="blue" text="Заказать звонок"}}
+                </div>
+                <div class="d-md-none d-block d-flex header__button--small">
+                    <a href="/">
+                        {{Icon iconName="phone"}}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__menu">
+        {{> menu/menu links=links}}
+    </div>
+</header>
