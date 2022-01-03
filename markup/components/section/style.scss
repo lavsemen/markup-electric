@@ -1,11 +1,38 @@
 .section {
     & + & {
-        margin-top: 64px;
+        margin-top: 80px;
     }
     & + &--mt-0 {
         margin-top: 0;
     }
     & + &--mt-120 {
         margin-top: 120px;
+    }
+    &--first {
+        margin-top: 32px;
+    }
+    &__header {
+
+        &-title {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            position: relative;
+            justify-content: center;
+            color: $c-blue;
+            @include font-size-get(headerTitle);
+            font-weight: 600;
+            &::before {
+                content: '';
+                width: 88px;
+                height: 2px;
+                position: absolute;
+                background: $c-light-blue;
+                top: -20px
+            }
+        }
+        & + * {
+            margin-top: 32px;
+        }
     }
 }

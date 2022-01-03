@@ -1,0 +1,11 @@
+.button.button--stroke {
+    background: transparent;
+    color: $c-white;
+    transition: .3s ease-in-out;
+    border: 1px solid $c-white;
+    border-radius: 3px;
+    &:hover {
+        color: $c-black;
+        background: $c-white;
+    }
+}

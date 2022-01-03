@@ -28,14 +28,14 @@
     }
     &__menu {
         &-close {
-            
+
         }
         position: fixed;
         top: 0;
         left: 0;
-        height: 50vh;
         padding: 40px;
         width: 100%;
+        z-index: 100;
         transition: .4s ease-in-out;
         transform: translateY(-1000px);
         background: $c-white;
@@ -61,6 +61,7 @@
         &-list {
             display: flex;
             align-items: center;
+            margin: 0;
         }
         &-item {
             @include font-size-get(p2);

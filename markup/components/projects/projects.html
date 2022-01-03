@@ -1,0 +1,12 @@
+<div class="projects swiper">
+    <div class="swiper-wrapper">
+        {{#each cards}}
+        <div class="swiper-slide">
+            {{> cards/projects/projects img=img title=title adress=adress}}
+        </div>
+        {{/each}}
+    </div>
+    <div class="projects__nav">
+        {{>uikit/navigation/navigation}}
+    </div>
+</div>

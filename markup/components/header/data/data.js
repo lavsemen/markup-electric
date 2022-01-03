@@ -3,8 +3,8 @@ const data = {
         'defaults': {
            'links':[
                 {
-                    'name': 'Обо мне',
-                    'url': '/'
+                    'name': 'Мои работы',
+                    'url': '#section-projects'
                 },
                 {
                     'name': 'Обо мне',

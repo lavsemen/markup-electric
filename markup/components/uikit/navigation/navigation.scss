@@ -1,0 +1,18 @@
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__button {
+        cursor: pointer;
+        display: flex;
+        height: 30px;
+        align-items: center;
+        & + * {
+            margin-left: 30px;
+        }
+        &--prev {
+            transform: rotate(180deg);
+        }
+    }
+}
