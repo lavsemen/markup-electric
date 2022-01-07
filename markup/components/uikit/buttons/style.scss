@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+  
     @include respond-to(lg) {
         padding: 12px 24px;
     };

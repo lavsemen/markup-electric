@@ -3,21 +3,22 @@ const data = {
         'defaults': {
            'links':[
                 {
+                    'name': 'Формула работы',
+                    'url': '#section-formula'
+                },
+                {
                     'name': 'Мои работы',
                     'url': '#section-projects'
                 },
                 {
-                    'name': 'Обо мне',
-                    'url': '/'
+                    'name': 'F.A.Q',
+                    'url': '#section-faq'
                 },
                 {
-                    'name': 'Обо мне',
-                    'url': '/'
+                    'name': 'Отзывы клиентов',
+                    'url': '#section-review'
                 },
-                {
-                    'name': 'Обо мне',
-                    'url': '/'
-                }
+
             ]
         }
     }

@@ -1,6 +1,7 @@
 .socials {
     display: flex;
     align-items: center;
+    margin: 0;
     &__item {
         & + * {
             margin-left: 10px;

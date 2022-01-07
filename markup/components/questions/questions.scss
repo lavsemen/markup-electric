@@ -1,0 +1,11 @@
+.questions {
+    .accordion-button {
+        padding: 32px;
+        @include font-size-get(h3);
+    }
+
+    .accordion-body {
+        @include font-size-get(p1);
+        padding: 24px;
+    }
+}

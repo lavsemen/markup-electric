@@ -1,10 +1,20 @@
 .button.button--blue {
     color: $c-white;
-    background: $c-gradient1;
+    background: $c-blue;
     cursor: pointer;
-    transition: .3s ease-in-out;
+    transition: .4s ease-in-out;
+    &:disabled {
+        background: #ccc;
+        cursor: not-allowed;
+        &:hover {
+            box-shadow: none;
+            background: #ccc;
+        }
+    }
     &:hover {
         border-radius: 4px;
-        box-shadow: -1px 18px 25px 0px rgba(27, 60, 233, 0.2);
+        box-shadow: -1px 10px 25px 0px rgba(27, 60, 233, 0.2);
+        background-color: $c-light-blue;
+        transition: .3s ease-in-out;
     }
 }

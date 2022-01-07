@@ -1,0 +1,38 @@
+<form class="main-form" id="form">
+    <div class="row gy-4">
+        <div class="col-md-6">
+            <div class="main-form__content">
+                <div class="main-form__title">
+                    Оставьте заявку
+                </div>
+                <div class="main-form__desc">
+                    Заполните форму и я вам перезвоню в течение часа в рабочее время.
+                </div>
+
+                <div class="main-form__field">
+                    {{>uikit/fields/f-input/f-input placeholder="Как вас зовут" id="form-name"}}
+                    <div class="main-form__error-message" data-validate-type="error" data-field-id="form-name">
+                        Обязательное поле!
+                    </div>
+                </div>
+                <div class="main-form__field">
+                    {{>uikit/fields/f-input/f-input placeholder="Ваш номер телефона" id="form-phone" type="phone" }}
+                    <div class="main-form__error-message"  data-validate-type="error" data-field-id="form-phone">
+                        Обязательное поле!
+                    </div>
+                </div>
+                <div class="main-form__field">
+                    {{>uikit/buttons/submit/submit type="blue" text="Отправить" submit="true"}}
+                </div>
+                <div class="main-form__policy">
+                    Нажимая на кнопку, вы соглашаетесь с условиями обработки персональных данных и политикой конфиденциальности
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="main-form__image">
+                <img src="static/img/content/main-form/form.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+</form>

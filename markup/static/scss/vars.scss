@@ -10,6 +10,7 @@ $c-white: #fff;
 $c-light-gray: rgba(17,17,17,.56);
 $c-blue: #1B3CE9;
 $c-light-blue: #00B9F3;
+$c-error: #f09595;
 $c-gradient1: radial-gradient(79.17% 678.17% at 2.5% 8.54%, rgba(0, 185, 243, 0.7) 0%, #1B3CE9 100%);
 //grid
 $breakpoints: (
@@ -52,7 +53,7 @@ $gutters: (
 $font-sizes: (
     //   (font-size,      (line-height),  letter-spacing (em) )
     //   xs, sm, md, lg, xl
-    headerTitle: (24, 24, 24, 24, (16px, 16px, 20px, 20px), 0.2),
+    headerTitle: (24, 24, 24, 24, (30px, 30px, 40px, 40px), 0.2),
     buttonL: (16, 16, 20, 20, (16px, 16px, 26px, 26px), 0),
     buttonM: (16, 16, 16, 16, (24px, 24px, 24px, 24px), 0),
     buttonS: (12, 12, 12, 12, (20px, 20px, 20px, 20px), 0),

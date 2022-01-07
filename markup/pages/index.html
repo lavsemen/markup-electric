@@ -2,6 +2,18 @@
     <section class="section section--first">
         {{>main-slider/main-slider}}
     </section>
+    <section class="section" id="section-formula">
+        <div class="container">
+            <div class="section__header">
+                <div class="section__header-title">
+                    Уникальная формула работы
+                </div>
+            </div>
+            <div class="section__body">
+                {{> promo/promo }}
+            </div>
+        </div>
+    </section>
     <section class="section" id="section-projects">
        <div class="container">
         <div class="section__header">
@@ -14,7 +26,19 @@
         </div>
        </div>
     </section>
-    <section class="section">
+    <section class="section" id="section-faq">
+       <div class="container">
+        <div class="section__header">
+            <div class="section__header-title">
+                Часто задаваемые вопросы
+            </div>
+        </div>
+        <div class="section__body">
+            {{> questions/questions}}
+        </div>
+       </div>
+    </section>
+    <section class="section" id="section-review">
         <div class="container">
             <div class="section__header">
                 <div class="section__header-title">
@@ -24,6 +48,11 @@
             <div class="section__body">
                 {{> reviews/reviews }}
             </div>
+        </div>
+    </section>
+    <section class="section" id="section-form">
+        <div class="container">
+            {{> main-form/main-form }}
         </div>
     </section>
 {{>page/templates/bottom}}

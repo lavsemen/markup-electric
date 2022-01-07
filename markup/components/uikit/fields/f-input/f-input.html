@@ -1,0 +1,6 @@
+<div class="f-input">
+    {{#if placeholder}}
+        <label for="{{id}}" class="f-input__placeholder">{{placeholder}}</label>
+    {{/if}}
+    <input type="text" class="input {{#if type}}input--{{type}}{{/if}}" id="{{id}}" placeholder="">
+</div>
