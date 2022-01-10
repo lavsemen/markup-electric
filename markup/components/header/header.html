@@ -9,7 +9,7 @@
             <nav class="header__nav header__item">
                 <ul class="header__nav-list">
                     {{#each links}}
-                        <li class="header__nav-item">
+                        <li class="header__nav-item {{#if hide}}header__nav-item--hide-lg{{/if}}">
                             {{>uikit/links/markup href=url text=name}}
                         </li>
                     {{/each}}

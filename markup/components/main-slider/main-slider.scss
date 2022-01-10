@@ -9,24 +9,24 @@
             justify-content: center;
         }
         &__subtitle {
-            color: $c-light-gray;
+            color: #ccc;
             font-weight: 400px;
-            @include font-size-get(p1);
+            @include font-size-get(h3);
             & + *{
                 margin-top: 8px;
             }
         }
         &__title {
-            @include font-size-get(h2);
+            @include font-size-get(h1);
             color: $c-black;
             & + * {
-                margin-top: 16px;
+                margin-top: 24px;
             }
         }
         &__desc {
             @include font-size-get(p1);
             & + * {
-                margin-top: 16px;
+                margin-top: 24px;
             }
         }
         &__image {

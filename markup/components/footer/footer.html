@@ -1,3 +1,41 @@
 <footer class="footer">
-    
+   <div class="container">
+    <div class="footer__wrapper">
+        <div class="footer__menu">
+            {{#each links}}
+             <div class="footer__menu-item">
+                 {{>uikit/links/markup text=name href=url}}
+             </div>
+            {{/each}}
+        </div>
+        <div class="footer__content">
+            <div class="footer__info">
+                <div class="footer__info-time">
+                    Пн-Пт: 9:00 — 21:00 <br>
+                    Сб-Вс: 11:00 — 18:00
+                </div>
+
+                <div class="footer__info-contacts">
+                    <a href="tel:89129986038" class="footer__info-contacts-phone">
+                        8(912) 998-60-38
+                    </a>
+                    <a class="footer__info-contacts-email" href="mailto: dobrovzorik@gmail.com">
+                        dobrovzorik@gmail.com
+                    </a>
+                </div>
+
+            </div>
+            <div class="footer__socials">
+                <div class="footer__socials-desc">
+                    Еще больше работ в соцсетях!
+                </div>
+               {{> socials/socials }}
+               <div class="footer__policy">
+                   Сайт разработал <a href="https://vk.com/caaxxxaar">Семен Лаврентьев</a>. Все права защищны. 2020 — 2021©
+               </div>
+            </div>
+        </div>
+    </div>
+
+   </div>
 </footer>

@@ -12,7 +12,7 @@
     }
     &__burger {
         display: none;
-        @include respond-to(lg) {
+        @include respond-to(xl) {
             display: block;
         };
     }
@@ -27,9 +27,6 @@
         };
     }
     &__menu {
-        &-close {
-
-        }
         position: fixed;
         top: 0;
         left: 0;
@@ -39,7 +36,7 @@
         transition: .4s ease-in-out;
         transform: translateY(-1000px);
         background: $c-white;
-        @include respond-from(lg) {
+        @include respond-from(xl) {
             display: none;
         };
         &.active {
@@ -65,6 +62,13 @@
         }
         &-item {
             @include font-size-get(p2);
+            &--hide {
+                &-lg {
+                    @include respond-to(xl) {
+                        display: none;
+                    };
+                }
+            }
             & + * {
                 margin-left: 26px;
             }

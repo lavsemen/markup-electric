@@ -1,5 +1,6 @@
 .link {
     color: $c-black;
+    cursor: pointer;
     @include baseHover {
         color: $c-blue;
         border-bottom: 1px solid $c-blue;

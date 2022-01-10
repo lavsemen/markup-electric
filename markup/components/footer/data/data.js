@@ -1,5 +1,5 @@
 const data = {
-    'footer': {
+    'header': {
         'defaults': {
            'links':[
                 {

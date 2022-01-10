@@ -10,6 +10,7 @@ $c-white: #fff;
 $c-light-gray: rgba(17,17,17,.56);
 $c-blue: #1B3CE9;
 $c-light-blue: #00B9F3;
+$c-light-gray: #ece9e9;
 $c-error: #f09595;
 $c-gradient1: radial-gradient(79.17% 678.17% at 2.5% 8.54%, rgba(0, 185, 243, 0.7) 0%, #1B3CE9 100%);
 //grid
@@ -17,7 +18,7 @@ $breakpoints: (
     'sm': 0px,
     'md': 768px,
     'lg': 1024px,
-    'xl': 1366px,
+    'xl': 1400px,
 ) !default;
 
 // Breakpoint map for bootstrap
@@ -25,7 +26,7 @@ $grid-breakpoints: (
     'sm': 0px,
     'md': 768px,
     'lg': 1024px,
-    'xl': 1366px,
+    'xl': 1400px,
 ) !default;
 
 // Container max-widths for bootstrap
@@ -57,7 +58,7 @@ $font-sizes: (
     buttonL: (16, 16, 20, 20, (16px, 16px, 26px, 26px), 0),
     buttonM: (16, 16, 16, 16, (24px, 24px, 24px, 24px), 0),
     buttonS: (12, 12, 12, 12, (20px, 20px, 20px, 20px), 0),
-    h1: (30, 48, 48, 72, (36px, 56px, 56px, 80px), 0),
+    h1: (30, 36, 36, 44, (38px, 44px, 44px, 48px), 0),
     h2: (24, 32, 32, 32, (30px, 40px, 40px, 40px), 0),
     h3: (18, 22, 22, 22, (24px, 28px, 28px, 28px), 0),
     h4: (16, 16, 18, 18, (22px, 22px, 24px, 24px), 0),

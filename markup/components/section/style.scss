@@ -1,6 +1,12 @@
 .section {
     & + & {
-        margin-top: 80px;
+        margin-top: 100px;
+        @include respond-to(lg) {
+            margin-top: 80px;
+        };
+        @include respond-to(md) {
+            margin-top: 48px;
+        };
     }
     & + &--mt-0 {
         margin-top: 0;
@@ -11,6 +17,16 @@
     &--first {
         margin-top: 32px;
     }
+    &--colored {
+        padding: 80px 0;
+        @include respond-to(lg) {
+            padding: 60px 0;
+        };
+        @include respond-to(md) {
+            padding: 32px 0;
+        };
+        background-color: $c-light-gray;
+    }
     &__header {
 
         &-title {
@@ -19,20 +35,19 @@
             align-items: center;
             position: relative;
             justify-content: center;
-            color: $c-blue;
-            @include font-size-get(headerTitle);
+            @include font-size-get(h2);
             font-weight: 600;
-            &::before {
-                content: '';
-                width: 88px;
-                height: 2px;
-                position: absolute;
-                background: $c-light-blue;
-                top: -20px
-            }
+            // &::before {
+            //     content: '';
+            //     width: 88px;
+            //     height: 2px;
+            //     position: absolute;
+            //     background: $c-light-blue;
+            //     top: -20px
+            // }
         }
         & + * {
-            margin-top: 32px;
+            margin-top: 42px;
         }
     }
 }

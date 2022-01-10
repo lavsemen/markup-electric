@@ -1,0 +1,94 @@
+.footer {
+    border-top: 1px solid rgba($color: $c-blue, $alpha: .3);
+    margin-top: 64px;
+    padding: 40px 0;
+    &__wrapper {
+        @include respond-to(lg) {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        };
+    }
+    &__info {
+       &-time {
+           @include font-size-get(h3);
+           font-weight: 500;
+           & + * {
+               margin-top: 16px;
+           }
+       }
+       &-contacts {
+           display: flex;
+           flex-direction: column;
+           &-phone {
+               @include font-size-get(h3);
+               color: $c-light-blue;
+           }
+       }
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 32px;
+        @include respond-to(lg) {
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 0;
+            flex-direction: column;
+        };
+        @include respond-to(md) {
+            margin-top: 32px;
+        };
+    }
+    &__socials {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        &-desc {
+            @include font-size-get(p1);
+        }
+        .socials {
+            margin-top: 16px;
+            &__item {
+                svg {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+
+        @include respond-to(lg) {
+            margin-top: 32px;
+        };
+    }
+    &__policy {
+        margin-top: 16px;
+        @include respond-from-to(md, lg) {
+            max-width: 300px
+        };
+        @include font-size-get(p2);
+        a {
+            color: $c-light-blue;
+        }
+        color: rgba($color: $c-black, $alpha: 0.6)
+    }
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include respond-to(lg) {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start
+        };
+        &-item {
+            @include respond-to(lg) {
+                & + * {
+                    margin-top: 12px;
+                }
+            };
+        }
+    }
+}
