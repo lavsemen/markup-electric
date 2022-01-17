@@ -17,6 +17,14 @@
         };
     }
     &__item {
+        .socials {
+            &__item {
+                svg {
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+        }
         @include respond-to(lg) {
             &.header__nav {
                 display: none;

@@ -10,6 +10,14 @@
         }
     }
     &__item {
+        .socials {
+            &__item {
+               svg {
+                width: 30px;
+                height: 30px;
+               }
+            }
+        }
         & + * {
             margin-top: 24px;
         }
